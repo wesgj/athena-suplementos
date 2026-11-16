@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Athena TZ Burn | Athena Suplementos</title>
+<meta name="description" content="Athena TZ Burn: 15 ingredientes naturais, sem cafeína, 1 cápsula por dia. Frete grátis e até 12x.">
+<meta property="og:title" content="Athena TZ Burn | Athena Suplementos">
+<meta property="og:description" content="15 ingredientes naturais, sem cafeína, 1 cápsula por dia.">
+<meta property="og:image" content="img/v2-lilas.jpg">
+<meta name="theme-color" content="#1E0F3A">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: página de produto direta, estilo loja (galeria + caixa de compra no topo), depois benefícios, fórmula, uso, prova, oferta e dúvidas. Visual único claro. */
+:root{
+  --papel:#FBFAFD; --lilas:#F2ECFC; --lilas2:#E5DAFA; --tinta:#1A1033; --tinta2:#4A3F66; --suave:#7A7092;
+  --uva:#1E0F3A; --roxo:#8A4BFF; --roxo-f:#6D33E0; --verde:#1F9D57; --linha:#E7E1F2;
+  --f-serif:"Fraunces",Georgia,serif; --f-sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--f-sans);font-size:16px;line-height:1.55;overflow-x:hidden;padding-bottom:76px;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;text-wrap:balance}
+h2{font-family:var(--f-serif);font-weight:400;font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.015em}
+h2 em{font-style:italic;color:var(--roxo-f)}
+p{margin:0}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:88px}
+@media (max-width:720px){section{padding-block:60px}}
+.kick{display:block;font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--roxo-f);margin-bottom:14px}
+.center{text-align:center}
+.center h2{margin-inline:auto;max-width:22ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:0 32px;border-radius:14px;background:var(--verde);color:#fff;font-weight:800;font-size:17px;letter-spacing:.02em;text-decoration:none;border:0;font-family:inherit;cursor:pointer;text-transform:uppercase}
+.btn:hover{background:#178048}
+.btn.dark{background:var(--uva)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--roxo);outline-offset:3px}
+
+/* barra de urgência */
+.urg{background:var(--uva);color:#fff;font-size:13.5px;font-weight:600;text-align:center;padding:10px 16px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}
+.urg b{background:#fff;color:var(--uva);padding:3px 8px;border-radius:6px;font-variant-numeric:tabular-nums;letter-spacing:.04em}
+header{background:#fff;border-bottom:1px solid var(--linha)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:76px}
+.hd img{height:52px;width:auto}
+.hd small{font-size:13px;color:var(--suave)}
+
+/* produto */
+.prod{padding-block:40px 72px}
+.pgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:start}
+@media (max-width:900px){.pgrid{grid-template-columns:1fr;gap:28px}}
+.gal{position:sticky;top:16px}
+@media (max-width:900px){.gal{position:relative;top:0}}
+.main{position:relative;border-radius:20px;overflow:hidden;background:radial-gradient(circle at 50% 60%,#E2D3FF,#F5F0FF 70%);aspect-ratio:1/1;max-width:100%}
+.main img{width:100%;height:100%;object-fit:cover}
+.main img.cut{object-fit:contain;padding:8%}
+.main .cnt{position:absolute;right:12px;bottom:12px;background:rgba(30,15,58,.75);color:#fff;font-size:12px;padding:4px 10px;border-radius:999px}
+.main .off{position:absolute;left:12px;top:12px;background:var(--verde);color:#fff;font-weight:800;font-size:13px;padding:6px 10px;border-radius:8px}
+.thumbs{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:10px}
+.thumbs button{padding:0;border:2px solid transparent;border-radius:10px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;background:var(--lilas)}
+.thumbs button[aria-current="true"]{border-color:var(--roxo-f)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.thumbs img.cut{object-fit:contain;padding:10%}
+.info h1{font-family:var(--f-serif);font-weight:400;font-size:clamp(34px,4vw,46px);line-height:1.05;letter-spacing:-.02em;margin-top:6px}
+.stars{display:flex;gap:8px;align-items:center;font-size:13.5px;color:var(--suave)}
+.stars b{color:#F5A623;letter-spacing:2px;font-size:15px}
+.desc{margin-top:12px;color:var(--tinta2);font-size:16.5px}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.badges span{font-size:13px;font-weight:600;background:var(--lilas);color:var(--roxo-f);padding:6px 12px;border-radius:999px}
+.qty{margin-top:24px}
+.qty .lbl{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--tinta2);margin-bottom:10px}
+.qgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+@media (max-width:480px){.qgrid{grid-template-columns:repeat(2,1fr)}}
+.q{position:relative;border:1.5px solid var(--linha);background:#fff;border-radius:12px;padding:16px 8px 12px;text-align:center;cursor:pointer;font-family:inherit;color:var(--tinta)}
+.q[aria-pressed="true"]{border-color:var(--roxo-f);box-shadow:0 0 0 1px var(--roxo-f);background:#FAF7FF}
+.q b{display:block;font-size:17px}
+.q span{display:block;font-size:12px;color:var(--suave)}
+.q i{position:absolute;top:-9px;left:50%;transform:translateX(-50%);font-style:normal;font-size:10px;font-weight:800;letter-spacing:.06em;background:var(--roxo-f);color:#fff;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.pbox{margin-top:18px;border:1px solid var(--linha);background:#fff;border-radius:16px;padding:20px}
+.prow{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.prow s{color:var(--suave);font-size:16px}
+.prow .now{font-size:36px;font-weight:800;letter-spacing:-.02em}
+.prow .pct{background:var(--verde);color:#fff;font-weight:800;font-size:13px;padding:4px 8px;border-radius:6px}
+.inst{font-size:15px;color:var(--tinta2);margin-top:2px}
+.day{font-size:13.5px;color:var(--roxo-f);font-weight:600;margin-top:6px}
+.timer{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;font-weight:600;color:#B4235A}
+.timer b{font-variant-numeric:tabular-nums}
+.pbox .btn{width:100%;margin-top:14px;min-height:62px;font-size:18px}
+.trust{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px;font-size:13.5px;color:var(--tinta2)}
+.trust li::before{content:"✓";color:var(--verde);font-weight:800;margin-right:8px}
+.pay{display:flex;gap:6px;margin-top:14px;flex-wrap:wrap}
+.pay span{font-size:11px;font-weight:700;border:1px solid var(--linha);border-radius:6px;padding:4px 8px;color:var(--tinta2)}
+
+/* chips */
+.chips{background:var(--uva);padding-block:18px;overflow:hidden}
+.chips .t{display:flex;width:max-content;gap:10px}
+.chips span{color:#fff;border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 14px;font-size:13.5px;white-space:nowrap}
+@media (prefers-reduced-motion:no-preference){.chips .t{animation:mq 40s linear infinite}@keyframes mq{to{transform:translateX(-50%)}}}
+
+/* benefícios */
+.bens{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+@media (max-width:860px){.bens{grid-template-columns:1fr}}
+.ben{background:#fff;border:1px solid var(--linha);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.ben h3{font-size:21px}
+.ben p{color:var(--tinta2)}
+.ben small{color:var(--suave);font-size:13px;margin-top:auto;padding-top:10px;border-top:1px solid var(--linha)}
+
+/* sem cafeína */
+.nocaf{background:var(--lilas)}
+.ngrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media (max-width:860px){.ngrid{grid-template-columns:1fr;gap:28px}}
+.ngrid .ph{border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-width:100%}
+.ngrid .ph img{width:100%;height:100%;object-fit:cover}
+.cmp{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:10px}
+.cmp li{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;border-radius:14px;background:#fff;border:1px solid var(--lilas2);font-size:15px}
+.cmp li span{color:var(--suave)}
+.cmp li.on{background:var(--uva);color:#fff;border-color:var(--uva)}
+.cmp li.on span{color:#C9AEFF;font-weight:700}
+.cmp li b{font-weight:600;text-align:right}
+
+/* fórmula */
+.ingr{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:40px}
+@media (max-width:900px){.ingr{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){.ingr{grid-template-columns:repeat(2,1fr)}}
+.ingr div{background:#fff;border:1px solid var(--linha);border-radius:14px;padding:16px}
+.ingr b{display:block;font-size:15px;margin-bottom:4px}
+.ingr span{font-size:13px;color:var(--tinta2)}
+.flags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.flags span{font-size:13px;font-weight:600;padding:7px 14px;border-radius:999px;background:var(--lilas);color:var(--roxo-f)}
+
+/* uso */
+.howgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media (max-width:860px){.howgrid{grid-template-columns:1fr;gap:28px}}
+.howgrid .ph{border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-width:100%}
+.howgrid .ph img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;margin:28px 0 28px;padding:0;display:grid;gap:12px}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:#fff;border:1px solid var(--linha);border-radius:14px;padding:16px}
+.steps .n{width:44px;height:44px;border-radius:12px;background:var(--uva);color:#fff;display:grid;place-items:center;font-weight:800}
+.steps b{display:block}
+.steps span{color:var(--tinta2);font-size:14.5px}
+.fine{font-size:12.5px;color:var(--suave);margin-bottom:20px}
+
+/* prova */
+.proof{background:var(--uva);color:#fff}
+.proof h2{color:#fff}.proof h2 em{color:#C9AEFF}
+.revs{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+@media (max-width:960px){.revs{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.revs{grid-template-columns:1fr}}
+.rev{background:rgba(255,255,255,.06);border:1px dashed rgba(255,255,255,.3);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;min-height:190px}
+.rev .st{color:#F5A623;letter-spacing:2px}
+.rev p{color:#D7CCF0;font-size:14.5px}
+.rev small{margin-top:auto;font-size:12px;color:#A99CC8}
+.proof .note{margin-top:18px;font-size:13px;color:#A99CC8;text-align:center}
+
+/* garanta */
+.kit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media (max-width:860px){.kit{grid-template-columns:1fr;gap:28px}}
+.kit .ph{border-radius:24px;overflow:hidden;aspect-ratio:4/5;max-width:100%}
+.kit .ph img{width:100%;height:100%;object-fit:cover}
+.kit ul{list-style:none;margin:24px 0 28px;padding:0;display:grid;gap:10px}
+.kit li{display:flex;justify-content:space-between;padding:14px 16px;border-radius:12px;background:#fff;border:1px solid var(--linha);font-size:15px}
+.kit li b{font-weight:700}
+.kit li.on{border-color:var(--roxo-f);background:#FAF7FF}
+
+/* faq */
+.faq{max-width:820px;margin:0 auto}
+details{border-bottom:1px solid var(--linha);padding:20px 0}
+details:first-of-type{border-top:1px solid var(--linha)}
+summary{cursor:pointer;list-style:none;font-weight:600;font-size:17px;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--roxo-f);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details p{margin-top:10px;color:var(--tinta2)}
+
+/* final */
+.final{position:relative;color:#fff;text-align:center;overflow:hidden;padding-block:120px}
+.final img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.final::after{content:"";position:absolute;inset:0;background:rgba(20,10,40,.74)}
+.final .wrap{position:relative;z-index:1}
+.final h2{color:#fff;margin:0 auto 14px}.final h2 em{color:#D9C6FF}
+.final p{color:#DCD1F2;margin:0 auto 30px;max-width:44ch}
+footer{background:#140A2B;color:#A99CC8;font-size:13px}
+footer .wrap{padding-block:36px;display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+footer img{width:130px;height:auto}
+footer p{max-width:70ch;font-size:12px;color:#7F72A3}
+
+/* barra fixa */
+.buy{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#fff;border-top:1px solid var(--linha);box-shadow:0 -8px 24px rgba(30,15,58,.08);padding-bottom:env(safe-area-inset-bottom,0px)}
+.buy .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:70px}
+.buy .l{display:flex;align-items:center;gap:12px;min-width:0}
+.buy .l img{height:48px;width:auto}
+.buy .l b{display:block;font-size:14px;white-space:nowrap}
+.buy .l span{font-size:13px;color:var(--suave)}
+.buy .btn{min-height:50px;padding:0 22px;font-size:15px;flex:none}
+.hook{font-size:19px;font-weight:700;color:var(--roxo-f);margin-top:12px;line-height:1.35}
+.ben .bt{width:40px;height:40px;border-radius:12px;background:var(--uva);color:#fff;display:grid;place-items:center;font-weight:800}
+.klist{display:grid;gap:10px;margin:24px 0 24px}
+.krow{display:flex;justify-content:space-between;align-items:center;gap:14px;width:100%;padding:16px 18px;border-radius:14px;background:#fff;border:1.5px solid var(--linha);cursor:pointer;font-family:inherit;text-align:left;color:var(--tinta)}
+.krow:hover{border-color:var(--lilas2)}
+.krow[aria-pressed="true"]{border-color:var(--roxo-f);background:#FAF7FF;box-shadow:0 0 0 1px var(--roxo-f)}
+.krow .kd{display:flex;flex-direction:column;gap:2px;min-width:0}
+.krow .kd b{font-size:16px}
+.krow .kd b i{font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--roxo-f);color:#fff;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:2px}
+.krow .kd small{font-size:13px;color:var(--suave)}
+.krow .kp{font-weight:800;font-size:18px;white-space:nowrap;flex:none}
+#kitbtn{width:100%}
+.gwrap{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:center}
+@media (max-width:860px){.gwrap{grid-template-columns:1fr;gap:28px;justify-items:start}}
+.seal svg{width:240px;height:240px}
+@media (max-width:860px){.seal svg{width:180px;height:180px}}
+.gp{color:#D7CCF0;font-size:17px;margin-top:14px;max-width:56ch}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+@media (max-width:860px){.tgrid{grid-template-columns:1fr 1fr}}
+.tgrid div{border-top:1px solid rgba(255,255,255,.2);padding-top:12px}
+.tgrid b{display:block;font-size:15px}
+.tgrid span{font-size:13px;color:#A99CC8}
+.stars .new{background:var(--uva);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px}
+.hnav{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:500}
+.hnav a{color:var(--tinta2);text-decoration:none}
+.hnav .hbtn{background:var(--uva);color:#fff;padding:10px 18px;border-radius:10px;font-weight:700}
+@media (max-width:720px){.hnav a:not(.hbtn){display:none}}
+.fnav{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.fnav a{color:#A99CC8;text-decoration:none;font-size:13px}
+@media (max-width:480px){.buy .l b{font-size:13px}.buy .l span{display:none}.buy .btn{padding:0 16px;font-size:14px}.buy .l img{height:40px}}
+</style>
+</head>
+<body>
+
+
+<div class="urg">Emagrecedor natural com até 44% de desconto · oferta termina em <b id="t1">--:--:--</b></div>
+
+<header><div class="wrap hd"><img src="img/logo-sup-dark.png" alt="Athena Suplementos"><nav class="hnav"><a href="#beneficios">Benefícios</a><a href="#formula">Fórmula</a><a href="#faq">Dúvidas</a><a class="hbtn" href="#comprar">Comprar</a></nav></div></header>
+
+<!-- PRODUTO -->
+<section class="prod" id="comprar">
+  <div class="wrap pgrid">
+    <div class="gal">
+      <div class="main"><img id="mainimg" src="img/pote.png" class="cut" alt="Athena TZ Burn"><span class="off" id="offtag">-32%</span><span class="cnt" id="cnt">1 / 6</span></div>
+      <div class="thumbs" id="thumbs"></div>
+    </div>
+    <div class="info">
+      <div class="stars"><span class="new">Novo</span>Lançamento oficial · lote 1</div>
+      <h1>Athena TZ Burn</h1>
+      <p class="hook">Queime gordura, elimine a retenção de líquido e ative o metabolismo.</p>
+      <p class="desc">Tudo isso com uma cápsula por dia, depois do café da manhã. São 15 ingredientes naturais e nenhuma cafeína.</p>
+      <div class="badges"><span>Queima gordura</span><span>Elimina retenção</span><span>Ativa o metabolismo</span><span>Sem cafeína</span></div>
+      <div class="qty"><div class="lbl">Quantidade</div><div class="qgrid" id="qgrid"></div></div>
+      <div class="pbox">
+        <div class="prow"><s id="from">R$ 497,00</s><span class="now" id="now">R$ 337,00</span><span class="pct" id="pct">32% OFF</span></div>
+        <div class="inst" id="inst">à vista no Pix ou 12x de R$ 34,85</div>
+        <div class="day" id="day">Sai por R$ 3,74 por dia</div>
+        <div class="timer">Preço de lançamento termina em <b id="t2">--:--:--</b></div>
+        <a class="btn" href="#comprar">Comprar agora</a>
+        <ul class="trust"><li>Compra 100% segura</li><li>Garantia de 30 dias ou seu dinheiro de volta</li><li>Frete grátis e consultoria com nutricionista de brinde</li></ul>
+        <div class="pay"><span>PIX</span><span>VISA</span><span>MASTERCARD</span><span>ELO</span><span>12x</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="chips" aria-hidden="true"><div class="t" id="chips"></div></div>
+
+<!-- POR QUE -->
+<section id="beneficios">
+  <div class="wrap center">
+    <span class="kick">Como a TZ Burn emagrece</span>
+    <h2>Ela ataca o peso <em>por três caminhos ao mesmo tempo.</em></h2>
+    <div class="bens" style="text-align:left">
+      <div class="ben"><span class="bt">1</span><h3>Queime gordura</h3><p>Com a fome sob controle, o corpo para de receber excesso e passa a usar a gordura guardada como energia. O psyllium, a chia e a linhaça seguram a saciedade, e o maracujá corta a vontade de doce que sabota a dieta.</p><small>Psyllium, chia, linhaça e maracujá</small></div>
+      <div class="ben"><span class="bt">2</span><h3>Elimine a retenção de líquido</h3><p>Boa parte daquela barriga estufada é líquido preso no corpo. O dente de leão e a carqueja ajudam a eliminar esse excesso, e o potássio repõe o que sai junto. É o que você sente primeiro, na roupa.</p><small>Dente de leão, carqueja e potássio</small></div>
+      <div class="ben"><span class="bt">3</span><h3>Ative o metabolismo</h3><p>Quando o metabolismo trava, nada funciona. O gengibre tem efeito termogênico natural e acelera o corpo sem cafeína, e a maca peruana com a beterraba dão disposição até a noite.</p><small>Gengibre, maca peruana e beterraba</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- SEM CAFEÍNA -->
+<section class="nocaf">
+  <div class="wrap ngrid">
+    <div class="ph"><img src="img/v1-marmore.jpg" alt="Pote Athena TZ Burn sobre mármore" loading="lazy"></div>
+    <div>
+      <span class="kick">Sem cafeína</span>
+      <h2>Dá para acelerar <em>sem ficar com o coração na boca.</em></h2>
+      <p style="margin-top:14px;color:var(--tinta2);font-size:17px">A maioria dos termogênicos é, no fundo, cafeína em dose alta. Dá energia por umas horas, tira o sono e depois passa. A TZ Burn foi feita para quem quer resultado sem esse preço.</p>
+      <ul class="cmp">
+        <li><span>Termogênico comum</span><b>Acelera, mas é cafeína</b></li>
+        <li><span>Chá detox</span><b>Desincha, e o efeito passa</b></li>
+        <li><span>Caneta</span><b>Agulha, receita e preço alto</b></li>
+        <li class="on"><span>TZ Burn</span><b>Cuida da fome, do inchaço e do metabolismo, sem cafeína</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- O QUE TEM -->
+<section id="formula">
+  <div class="wrap center">
+    <span class="kick">O que tem no pote</span>
+    <h2>Tudo o que vai <em>dentro de cada cápsula</em></h2>
+    <div class="ingr" id="ingr" style="text-align:left"></div>
+    <div class="flags"><span>Sem cafeína</span><span>Ingredientes naturais</span><span>30 cápsulas por pote</span><span>Uso diário</span></div>
+  </div>
+</section>
+
+<!-- COMO USAR -->
+<section style="padding-top:0">
+  <div class="wrap howgrid">
+    <div>
+      <span class="kick">Simples assim</span>
+      <h2>É só uma <em>por dia.</em></h2>
+      <ol class="steps">
+        <li><span class="n">1</span><div><b>Tome depois do café da manhã</b><span>Com um copo cheio de água.</span></div></li>
+        <li><span class="n">2</span><div><b>Beba bastante água no dia</b><span>Uns 2 litros. Se puder, inclua uma água de coco.</span></div></li>
+        <li><span class="n">3</span><div><b>Dê tempo ao seu corpo</b><span>Os primeiros sinais aparecem rápido, mas o ideal é seguir por 90 dias.</span></div></li>
+      </ol>
+      <p class="fine">Não tome junto com leite nem no dia em que beber álcool. Resultados variam de pessoa para pessoa.</p>
+      <a class="btn" href="#comprar">Quero começar</a>
+    </div>
+    <div class="ph"><img src="img/v3-cozinha.jpg" alt="Mão segurando o pote TZ Burn na cozinha" loading="lazy"></div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="proof">
+  <div class="wrap gwrap">
+    <div class="seal" aria-hidden="true"><svg viewBox="0 0 200 200"><defs><path id="cp" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><circle cx="100" cy="100" r="96" fill="none" stroke="#C9AEFF" stroke-width="2"/><circle cx="100" cy="100" r="62" fill="#8A4BFF"/><text font-family="Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="3.2" fill="#C9AEFF"><textPath href="#cp">GARANTIA INCONDICIONAL · SATISFAÇÃO OU REEMBOLSO ·</textPath></text><text x="100" y="98" text-anchor="middle" font-family="Fraunces,serif" font-size="46" fill="#fff">30</text><text x="100" y="122" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#fff">DIAS</text></svg></div>
+    <div>
+      <span class="kick" style="color:#C9AEFF">Risco zero</span>
+      <h2>Experimente por 30 dias. <em>Se não gostar, devolvemos seu dinheiro.</em></h2>
+      <p class="gp">Você tem 30 dias a partir do recebimento para testar a TZ Burn. Se não ficar satisfeita, é só chamar nosso atendimento que devolvemos 100% do valor, sem perguntas.</p>
+      <div class="tgrid">
+        <div><b>Compra segura</b><span>Pagamento criptografado</span></div>
+        <div><b>Frete grátis</b><span>Para todo o Brasil</span></div>
+        <div><b>Entrega rastreada</b><span>Código por e-mail e WhatsApp</span></div>
+        <div><b>Nutricionista</b><span>Consultoria de brinde</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTA -->
+<section>
+  <div class="wrap kit">
+    <div class="ph"><img src="img/v4-kit.jpg" alt="Kit com 3 potes Athena TZ Burn" loading="lazy"></div>
+    <div>
+      <span class="kick">Garanta o seu</span>
+      <h2>Quanto mais tempo de rotina, <em>menor o preço.</em></h2>
+      <p style="margin-top:14px;color:var(--tinta2);font-size:17px">A maioria das clientes leva o kit de 3 potes, que cobre os 90 dias que a gente recomenda.</p>
+      <div class="klist" id="klist">
+        <button type="button" class="krow" data-i="0"><span class="kd"><b>1 pote</b><small>30 dias</small></span><span class="kp">R$ 167,00</span></button>
+        <button type="button" class="krow" data-i="1"><span class="kd"><b>2 potes</b><small>60 dias</small></span><span class="kp">R$ 267,00</span></button>
+        <button type="button" class="krow" data-i="2"><span class="kd"><b>3 potes <i>Mais vendido</i></b><small>90 dias · R$ 3,74 por dia</small></span><span class="kp">R$ 337,00</span></button>
+        <button type="button" class="krow" data-i="3"><span class="kd"><b>4 potes <i>Melhor preço</i></b><small>120 dias · R$ 3,31 por dia</small></span><span class="kp">R$ 397,00</span></button>
+      </div>
+      <a class="btn" href="#comprar" id="kitbtn">Comprar 3 potes · R$ 337,00</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0" id="faq">
+  <div class="wrap faq">
+    <h2 class="center" style="margin-bottom:32px">Ficou alguma <em>dúvida?</em></h2>
+    <details><summary>Como eu tomo?</summary><p>1 cápsula por dia, depois do café da manhã, com bastante água ao longo do dia.</p></details>
+    <details><summary>Em quanto tempo sinto diferença?</summary><p>A maioria das clientes sente o corpo menos inchado já nos primeiros dias, e a fome mais calma logo depois. Para ver o resultado completo, o ideal é usar por 90 dias.</p></details>
+    <details><summary>Tem cafeína?</summary><p>Não. O estímulo vem do gengibre, leve e natural, sem agitação.</p></details>
+    <details><summary>Ajuda a emagrecer?</summary><p>Ela ajuda justamente no que costuma fazer a gente desistir: a fome, o inchaço e a falta de energia. Com isso sob controle, fica bem mais fácil manter a alimentação e enxergar o resultado. Comer bem e se mexer um pouco fazem o efeito render mais.</p></details>
+    <details><summary>Quem não pode tomar?</summary><p>Gestantes, lactantes, menores de 16 anos e pessoas com problema cardíaco. Quem tem pressão alta ou diabetes deve confirmar com o médico.</p></details>
+    <details><summary>Qual o prazo de entrega?</summary><p>Enviamos para todo o Brasil com frete grátis. O código de rastreio chega por e-mail e WhatsApp.</p></details>
+    <details><summary>E se eu não gostar?</summary><p>Você tem 30 dias para pedir o dinheiro de volta.</p></details>
+    <details><summary>Quais as formas de pagamento?</summary><p>Pix ou cartão de crédito em até 12x.</p></details>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <img class="bg" src="img/v5-bolsa.jpg" alt="" loading="lazy">
+  <div class="wrap">
+    <h2>Amanhã de manhã pode ser <em>o primeiro dia.</em></h2>
+    <p>Uma cápsula por dia para queimar gordura, eliminar a retenção e ativar o metabolismo. O resto do seu dia segue normal.</p>
+    <a class="btn" href="#comprar">Aproveitar a oferta</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo-sup-white.png" alt="Athena Suplementos">
+    <nav class="fnav"><a href="#comprar">Comprar</a><a href="#faq">Dúvidas</a><a href="#faq">Trocas e devoluções</a><a href="#faq">Política de privacidade</a></nav>
+    <p>Suplemento alimentar. Este produto não é um medicamento. Os resultados variam de pessoa para pessoa e dependem de alimentação equilibrada e hábitos saudáveis. Consulte um profissional de saúde antes de usar. © 2026 Athena Suplementos.</p>
+  </div>
+</footer>
+
+<div class="buy">
+  <div class="wrap">
+    <div class="l"><img src="img/pote.png" alt=""><div><b id="bq">3 potes · R$ 337,00</b><span>ou 12x no cartão</span></div></div>
+    <a class="btn" href="#comprar">Comprar agora</a>
+  </div>
+</div>
+
+<script>
+const IMGS=[["img/pote.png",1],["img/v2-lilas.jpg"],["img/v1-marmore.jpg"],["img/v3-cozinha.jpg"],["img/v5-bolsa.jpg"],["img/v4-kit.jpg"]];
+const th=document.getElementById("thumbs"),mi=document.getElementById("mainimg");
+th.innerHTML=IMGS.map(([s,c],i)=>`<button type="button" data-i="${i}" aria-current="${i===0}"><img src="${s}" class="${c?'cut':''}" alt="Foto ${i+1}"></button>`).join("");
+th.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const i=+b.dataset.i;mi.src=IMGS[i][0];mi.className=IMGS[i][1]?'cut':'';document.getElementById("cnt").textContent=(i+1)+" / "+IMGS.length;th.querySelectorAll("button").forEach(x=>x.setAttribute("aria-current",x===b));});
+
+const CH=["Psyllium","Chia","Linhaça","Maracujá","Gengibre","Dente de leão","Carqueja","Marmelinho","Calunga","Centella asiática","Maca peruana","Beterraba","Berinjela","Aloe vera","Potássio","0% cafeína","1 cápsula por dia"];
+const o=CH.map(c=>`<span>${c}</span>`).join("");document.getElementById("chips").innerHTML=o+o;
+
+const ING=[["Psyllium","Gel que segura a fome"],["Chia","Saciedade prolongada"],["Linhaça","Intestino em dia"],["Maracujá","Menos vontade de doce"],["Gengibre","Acelera sem cafeína"],["Dente de leão","Tira a retenção"],["Carqueja","Diurético e fígado"],["Marmelinho","Apoio digestivo"],["Calunga","Apoio digestivo"],["Centella asiática","Circulação e pele"],["Maca peruana","Disposição"],["Beterraba","Circulação"],["Berinjela","Efeito detox"],["Aloe vera","Pele e intestino"],["Potássio","Repõe minerais"]];
+document.getElementById("ingr").innerHTML=ING.map(([n,d])=>`<div><b>${n}</b><span>${d}</span></div>`).join("");
+
+const K=[
+ {n:"1 pote",d:"30 dias",from:"R$ 297,00",now:"R$ 167,00",pct:"44% OFF",inst:"à vista no Pix ou 12x de R$ 17,27",day:"R$ 5,57"},
+ {n:"2 potes",d:"60 dias",from:"R$ 397,00",now:"R$ 267,00",pct:"33% OFF",inst:"à vista no Pix ou 12x de R$ 27,61",day:"R$ 4,45"},
+ {n:"3 potes",d:"90 dias",tag:"MAIS VENDIDO",from:"R$ 497,00",now:"R$ 337,00",pct:"32% OFF",inst:"à vista no Pix ou 12x de R$ 34,85",day:"R$ 3,74"},
+ {n:"4 potes",d:"120 dias",tag:"MELHOR PREÇO",from:"R$ 597,00",now:"R$ 397,00",pct:"34% OFF",inst:"à vista no Pix ou 12x de R$ 41,06",day:"R$ 3,31"}
+];
+const qg=document.getElementById("qgrid");
+qg.innerHTML=K.map((k,i)=>`<button type="button" class="q" data-i="${i}" aria-pressed="false">${k.tag?`<i>${k.tag}</i>`:""}<b>${k.n}</b><span>${k.d}</span></button>`).join("");
+var setQ=function(i){const k=K[i];qg.querySelectorAll(".q").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.i===i));
+ from.textContent=k.from;now.textContent=k.now;pct.textContent=k.pct;inst.textContent=k.inst;day.textContent="Sai por "+k.day+" por dia";
+ document.getElementById("offtag").textContent="-"+k.pct.replace(" OFF","");document.getElementById("bq").textContent=k.n+" · "+k.now;}
+qg.addEventListener("click",e=>{const b=e.target.closest(".q");if(b)window.setQ(+b.dataset.i);});
+setQ(2);
+
+
+const kl=document.getElementById("klist"),kb=document.getElementById("kitbtn");
+function syncKit(i){kl.querySelectorAll(".krow").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.i===i));kb.textContent="Comprar "+K[i].n+" · "+K[i].now;}
+kl.addEventListener("click",e=>{const b=e.target.closest(".krow");if(!b)return;const i=+b.dataset.i;setQ(i);syncKit(i);});
+const _setQ=setQ;setQ=function(i){_setQ(i);syncKit(i);};
+syncKit(2);
+function tick(){const n=new Date(),e=new Date(n);e.setHours(23,59,59,999);let s=Math.max(0,(e-n)/1000|0);const t=[s/3600|0,(s%3600)/60|0,s%60].map(v=>String(v).padStart(2,"0")).join(":");t1.textContent=t;t2.textContent=t;}
+tick();setInterval(tick,1000);
+</script>
+
+</body>
+</html>
